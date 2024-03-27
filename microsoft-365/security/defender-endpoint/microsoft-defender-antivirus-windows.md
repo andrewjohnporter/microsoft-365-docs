@@ -115,7 +115,7 @@ You can use one of several methods, such as the Windows Security app or Windows 
 > - If "Turn off Windows Defender" is already in place before onboarding to Microsoft Defender for Endpoint, there will be no change and Defender Antivirus will remain disabled.
 > - To switch Defender Antivirus to passive mode, even if it was disabled before onboarding, you can apply the [ForceDefenderPassiveMode configuration](switch-to-mde-phase-2.md#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) with a value of `1`. To place it into active mode, switch this value to `0` instead.
 > 
-> Note the modified logic for `ForceDefenderPassiveMode` when tamper protection is enabled: Once Microsoft Defender Antivirus is toggled to active mode, tamper protection will prevent it from going back into passive mode even when `ForceDefenderPassiveMode` is set to `1`.
+> Note the modified logic for `ForceDefenderPassiveMode` when tamper protection is enabled: Once Microsoft Defender Antivirus is toggled to active mode, tamper protection will prevent it from going back into passive mode even when `ForceDefenderPassiveMode` is set to `1`. To change Av Modes downwards once he key key is in place, for example, change from Active to EDR in Block Mode, you will need to turn off tamper protection. To do this log in to security.microsoft.com portal, locate the device and 'turn on Troubleshooting mode'. You will then need to reboot the device.
 
 ### Use the Windows Security app to check the status of Microsoft Defender Antivirus
 
